@@ -22,32 +22,3 @@ The package is organised as follows:
    * Graph differential operators: :py:class:`~pycsou_gsp.linop.diff.GraphLaplacian`, :py:class:`~pycsou_gsp.linop.diff.GraphGradient`, :py:class:`~pycsou_gsp.linop.diff.GeneralisedGraphLaplacian`.
 
 2. The subpackage ``pycsou_gsp.tesselation`` provides routines for generating graphs from discrete tessellations of continuous manifolds such as the sphere. 
-   
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Installation
-   :hidden:
-
-   general/install
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Reference documentation
-
-   api/index
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   :caption: More
-
-   notes/index
-
-.. Indices and tables
-.. ==================
-
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`

@@ -36,7 +36,7 @@ class PolynomialLinearOperator(LinearOperator):
     Examples
     --------
 
-    .. doctests::
+    .. doctest::
 
        >>> from pycsou.linop import DenseLinearOperator
        >>> from pycsou_gsp.linop.base import PolynomialLinearOperator

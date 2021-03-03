@@ -29,7 +29,7 @@ class GraphLaplacian(LinearOperator):
 
        import numpy as np
        from pygsp.graphs import Ring
-       from pycsou_gsp.linop.conv import GraphLaplacian
+       from pycsou_gsp.linop.diff import GraphLaplacian
        np.random.seed(1)
        G = Ring(N=32, k=4)
        G.compute_laplacian(lap_type='normalized')
