@@ -1,0 +1,46 @@
+.. image:: /images/pycsou.png
+  :width: 50 %
+  :align: center
+  :target: https://github.com/matthieumeo/pycsou-gsp
+
+.. image:: https://zenodo.org/badge/277582581.svg
+   :target: https://zenodo.org/badge/latestdoi/277582581
+
+
+*Pycsou-gsp* is the graph signal processing extension of the Python 3 package Pycsou for solving linear inverse problems. The extension offers implementations of graph *convolution* and *differential* operators, compatible with Pycsou's interface for linear operators. 
+
+Graphs in *Pycsou-gsp* are instances from the class ``pygsp.graphs.Graph`` from the `pygsp <https://github.com/epfl-lts2/pygsp>`_ library for graph signal processing with Python. 
+
+Content
+-------
+
+The package is organised as follows:
+
+1. The subpackage ``pycsou_gsp.linop`` implements the following common graph linear operators:
+  * Graph convolution operators: :py:class:`~pycsou_gsp.linop.conv.GraphConvolution`
+  * Graph differential operators: :py:class:`~pycsou_gsp.linop.diff.GraphLaplacian`, :py:class:`~pycsou_gsp.linop.diff.GraphGradient`, :py:class:`~pycsou_gsp.linop.diff.GeneralisedGraphLaplacian`.
+
+2. The subpackage ``pycsou_gsp.tesselation`` provides routines for generating graphs from discrete tessellations of continuous manifolds such as the sphere. 
+   
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Installation
+   :hidden:
+
+   general/install
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Reference documentation
+
+   api/index
+
+
+.. Indices and tables
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
