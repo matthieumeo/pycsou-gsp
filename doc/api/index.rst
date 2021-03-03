@@ -6,3 +6,4 @@ Pycsou-gsp API
    :hidden:
 
    operators/index
+   tessellations/index
