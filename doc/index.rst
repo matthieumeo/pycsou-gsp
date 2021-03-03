@@ -26,7 +26,7 @@ The package is organised as follows:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Installation
+   :caption: Getting Started
    :hidden:
 
    general/install
