@@ -16,12 +16,12 @@ Content
 
 The package is organised as follows:
 
-1. The subpackage ``pycsou_gsp.linop`` implements the following common graph linear operators:
+1. The subpackage ``pycgsp.linop`` implements the following common graph linear operators:
   
-   * Graph convolution operators: :py:class:`~pycsou_gsp.linop.conv.GraphConvolution`
-   * Graph differential operators: :py:class:`~pycsou_gsp.linop.diff.GraphLaplacian`, :py:class:`~pycsou_gsp.linop.diff.GraphGradient`, :py:class:`~pycsou_gsp.linop.diff.GeneralisedGraphLaplacian`.
+   * Graph convolution operators: :py:class:`~pycgsp.linop.conv.GraphConvolution`
+   * Graph differential operators: :py:class:`~pycgsp.linop.diff.GraphLaplacian`, :py:class:`~pycgsp.linop.diff.GraphGradient`, :py:class:`~pycgsp.linop.diff.GeneralisedGraphLaplacian`.
 
-2. The subpackage ``pycsou_gsp.tesselation`` provides routines for generating graphs from discrete tessellations of continuous manifolds such as the sphere. 
+2. The subpackage ``pycgsp.graph`` provides routines for generating graphs from discrete tessellations of continuous manifolds such as the sphere.
    
 
 .. toctree::

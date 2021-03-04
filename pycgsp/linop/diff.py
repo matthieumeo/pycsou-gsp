@@ -13,7 +13,7 @@ import pygsp
 
 from pycsou.core.linop import LinearOperator
 from pycsou.linop.base import SparseLinearOperator, IdentityOperator
-from pycsou_gsp.linop.base import PolynomialLinearOperator
+from pycgsp.linop.base import PolynomialLinearOperator
 
 
 class GraphLaplacian(LinearOperator):
@@ -29,7 +29,7 @@ class GraphLaplacian(LinearOperator):
 
        import numpy as np
        from pygsp.graphs import Ring
-       from pycsou_gsp.linop.diff import GraphLaplacian
+       from pycgsp.linop.diff import GraphLaplacian
        np.random.seed(1)
        G = Ring(N=32, k=4)
        G.compute_laplacian(lap_type='normalized')
@@ -77,8 +77,8 @@ class GraphLaplacian(LinearOperator):
 
     See Also
     --------
-    :py:class:`~pycsou_gsp.linop.diff.GraphGradient`, :py:func:`~pycsou_gsp.linop.diff.GeneralisedGraphLaplacian`
-    :py:class:`~pycsou_gsp.linop.conv.GraphConvolution`
+    :py:class:`~pycgsp.linop.diff.GraphGradient`, :py:func:`~pycgsp.linop.diff.GeneralisedGraphLaplacian`
+    :py:class:`~pycgsp.linop.conv.GraphConvolution`
 
     """
 
@@ -131,7 +131,7 @@ class GraphGradient(LinearOperator):
 
        import numpy as np
        from pygsp.graphs import Ring
-       from pycsou_gsp.linop.diff import GraphLaplacian, GraphGradient
+       from pycgsp.linop.diff import GraphLaplacian, GraphGradient
        np.random.seed(1)
 
     .. doctest::
@@ -160,7 +160,7 @@ class GraphGradient(LinearOperator):
 
     See Also
     --------
-    :py:class:`~pycsou_gsp.linop.diff.GraphLaplacian`, :py:func:`~pycsou_gsp.linop.diff.GeneralisedGraphLaplacian`
+    :py:class:`~pycgsp.linop.diff.GraphLaplacian`, :py:func:`~pycgsp.linop.diff.GeneralisedGraphLaplacian`
 
     """
 
@@ -215,7 +215,7 @@ def GeneralisedGraphLaplacian(Graph: pygsp.graphs.Graph, kind: str = 'iterated',
         * ``'sobolev'``: :math:`\mathscr{D}=(\alpha^2 \mathrm{Id}-\mathbf{L})^N`, with :math:`\alpha\in\mathbb{R}`,
         * ``'polynomial'``: :math:`\mathscr{D}=\sum_{n=0}^N \alpha_n \mathbf{L}^n`,  with :math:`\{\alpha_0,\ldots,\alpha_N\} \subset\mathbb{R}`,
 
-        where :math:`\mathbf{L}` is the :py:func:`~pycsou.linop.diff.GraphLaplacian` operator.
+        where :math:`\mathbf{L}` is the :py:class:`~pycgsp.linop.diff.GraphLaplacian` operator.
     kwargs: Any
         Additional arguments depending on the value of ``kind``:
 
@@ -239,7 +239,7 @@ def GeneralisedGraphLaplacian(Graph: pygsp.graphs.Graph, kind: str = 'iterated',
 
        import numpy as np
        from pygsp.graphs import Ring
-       from pycsou_gsp.linop.diff import GeneralisedGraphLaplacian
+       from pycgsp.linop.diff import GeneralisedGraphLaplacian
        np.random.seed(1)
        G = Ring(N=32, k=4)
        G.compute_laplacian(lap_type='normalized')
@@ -266,7 +266,7 @@ def GeneralisedGraphLaplacian(Graph: pygsp.graphs.Graph, kind: str = 'iterated',
 
     See Also
     --------
-    :py:class:`~pycsou_gsp.linop.diff.GraphLaplacian`
+    :py:class:`~pycgsp.linop.diff.GraphLaplacian`
 
 
     """

@@ -24,7 +24,7 @@ def pkg_info() -> Mapping:
     Load information contained in `PKG-INFO`.
     """
     sphinx_src_dir = pathlib.Path(__file__).parent
-    info_path = sphinx_src_dir / ".." / "pycsou_gsp.egg-info" / "PKG-INFO"
+    info_path = sphinx_src_dir / ".." / "pycgsp.egg-info" / "PKG-INFO"
     info_path = info_path.resolve(strict=True)
 
     # Pattern definitions
@@ -105,7 +105,8 @@ intersphinx_mapping = {
     "pylops [latest]": ("https://pylops.readthedocs.io/en/latest", None),
     "dask [latest]": ("https://docs.dask.org/en/latest/", None),
     "pandas": ("http://pandas.pydata.org/pandas-docs/stable/", None),
-    "matplotlib": ("https://matplotlib.org/", None)
+    "matplotlib": ("https://matplotlib.org/", None),
+    "pycsou": ("https://matthieumeo.github.io/pycsou/html/", None)
 }
 
 # -- Options for napoleon extension ------------------------------------------

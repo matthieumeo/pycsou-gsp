@@ -43,7 +43,7 @@ class PolynomialLinearOperator(LinearOperator):
     .. doctest::
 
        >>> from pycsou.linop import DenseLinearOperator
-       >>> from pycsou_gsp.linop.base import PolynomialLinearOperator
+       >>> from pycgsp.linop.base import PolynomialLinearOperator
        >>> L = DenseLinearOperator(np.arange(64).reshape(8,8))
        >>> PL = PolynomialLinearOperator(LinOp=L, coeffs=[1/2 ,2, 1])
        >>> x = np.arange(8)

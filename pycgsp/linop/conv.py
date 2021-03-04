@@ -13,7 +13,7 @@ import numpy as np
 import pygsp
 
 from pycsou.linop.base import SparseLinearOperator
-from pycsou_gsp.linop.base import PolynomialLinearOperator
+from pycgsp.linop.base import PolynomialLinearOperator
 
 
 class GraphConvolution(PolynomialLinearOperator):
@@ -36,7 +36,7 @@ class GraphConvolution(PolynomialLinearOperator):
 
        import numpy as np
        from pygsp.graphs import RandomRegular
-       from pycsou_gsp.linop.conv import GraphConvolution
+       from pycgsp.linop.conv import GraphConvolution
        np.random.seed(0)
 
     .. doctest::
@@ -52,7 +52,7 @@ class GraphConvolution(PolynomialLinearOperator):
 
        import numpy as np
        from pygsp.graphs import Ring
-       from pycsou_gsp.linop.conv import GraphConvolution
+       from pycgsp.linop.conv import GraphConvolution
        np.random.seed(0)
        G = Ring(N=32, k=2)
        G.compute_laplacian(lap_type='normalized')
@@ -86,7 +86,7 @@ class GraphConvolution(PolynomialLinearOperator):
 
     See Also
     --------
-    :py:class:`~pycsou_gsp.linop.diff.GraphLaplacian`
+    :py:class:`~pycgsp.linop.diff.GraphLaplacian`
 
     """
 

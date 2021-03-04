@@ -1,4 +1,4 @@
-Pycsou-gsp API
+Pycsou-GSP API
 ##############
 
 .. toctree::
@@ -6,4 +6,4 @@ Pycsou-gsp API
    :hidden:
 
    operators/index
-   tessellations/index
+   graphs/index

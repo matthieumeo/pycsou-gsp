@@ -55,7 +55,7 @@ def cvxhull_graph(R: np.ndarray, cheb_normalized: bool = True, compute_different
     .. plot::
 
         import numpy as np
-        from pycsou_gsp.tessellation import cvxhull_graph
+        from pycgsp.graph import cvxhull_graph
         from pygsp.plotting import plot_graph
         theta, phi = np.linspace(0,np.pi,6, endpoint=False)[1:], np.linspace(0,2*np.pi,9, endpoint=False)
         theta, phi = np.meshgrid(theta, phi)
@@ -153,7 +153,7 @@ def healpix_nngraph(nside: int, cheb_normalized: bool = True, compute_differenti
 
     .. plot::
 
-        from pycsou_gsp.tessellation import healpix_nngraph
+        from pycgsp.graph import healpix_nngraph
         from pygsp.plotting import plot_graph
         G, _ = healpix_nngraph(nside=2)
         plot_graph(G)

@@ -3,7 +3,7 @@ Differential Operators
 
 Base class for graph convolution operators. 
 
-.. automodule:: pycsou_gsp.linop.diff
+.. automodule:: pycgsp.linop.diff
    :special-members: __init__
 
    .. autosummary::   
