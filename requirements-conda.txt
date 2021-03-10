@@ -1,8 +1,8 @@
-python >= 3.6.*
+python == 3.6.*
 pygsp == 0.5.1
 healpy >= 1.14.*
 numpy >= 1.10
 scipy >= 1.5.*
 matplotlib >= 3.3.*
-sphinx >= 2.1.*
-sphinx_rtd_theme >= 0.4.*
+sphinx == 2.1.*
+sphinx_rtd_theme == 0.4.*

@@ -12,8 +12,7 @@ from typing import Union
 import numpy as np
 import pygsp
 
-from pycsou.linop.base import SparseLinearOperator
-from pycgsp.linop.base import PolynomialLinearOperator
+from pycsou.linop.base import SparseLinearOperator, PolynomialLinearOperator
 
 
 class GraphConvolution(PolynomialLinearOperator):

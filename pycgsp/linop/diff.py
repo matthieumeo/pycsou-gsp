@@ -12,9 +12,7 @@ import numpy as np
 import pygsp
 
 from pycsou.core.linop import LinearOperator
-from pycsou.linop.base import SparseLinearOperator, IdentityOperator
-from pycgsp.linop.base import PolynomialLinearOperator
-
+from pycsou.linop.base import SparseLinearOperator, IdentityOperator, PolynomialLinearOperator
 
 class GraphLaplacian(LinearOperator):
     r"""
