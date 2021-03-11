@@ -18,11 +18,26 @@ The package is organised as follows:
 
 1. The subpackage ``pycgsp.linop`` implements the following common graph linear operators:
   
-   * Graph convolution operators: :py:class:`~pycgsp.linop.conv.GraphConvolution`
-   * Graph differential operators: :py:class:`~pycgsp.linop.diff.GraphLaplacian`, :py:class:`~pycgsp.linop.diff.GraphGradient`, :py:class:`~pycgsp.linop.diff.GeneralisedGraphLaplacian`.
+* Graph convolution operators (``pycgsp.linop.conv``):
 
-2. The subpackage ``pycgsp.graph`` provides routines for generating graphs from discrete tessellations of continuous manifolds such as the sphere.
-   
+.. autosummary::
+
+    pycgsp.linop.conv.GraphConvolution
+
+* Graph differential operators (``pycgsp.linop.diff``):
+
+.. autosummary::
+
+    pycgsp.linop.diff.GraphLaplacian
+    pycgsp.linop.diff.GraphGradient
+    pycgsp.linop.diff.GeneralisedGraphLaplacian
+
+2. The module ``pycgsp.graph`` provides routines for generating graphs from discrete tessellations of continuous manifolds such as the sphere:
+
+.. autosummary::
+
+    pycgsp.graph.cvxhull_graph
+    pycgsp.graph.healpix_nngraph
 
 .. toctree::
    :maxdepth: 1

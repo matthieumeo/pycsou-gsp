@@ -7,3 +7,9 @@ Pycsou-GSP API
 
    operators/index
    graphs/index
+
+.. autosummary::
+
+    pycgsp.linop.conv
+    pycgsp.linop.diff
+    pycgsp.graph

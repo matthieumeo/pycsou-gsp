@@ -1,7 +1,7 @@
 Tessellation Graphs
 ===================
 
-.. automodule:: pycgsp.graph.__init__
+.. automodule:: pycgsp.graph
    :special-members: __init__
 
 	.. autosummary:: 
