@@ -102,7 +102,7 @@ def cvxhull_graph(R: np.ndarray, cheb_normalized: bool = True, compute_different
 def _graph_laplacian(W, R, compute_differential_operator=False, cheb_normalized=False):
     # Form Graph Laplacian
     G = Graph(W, gtype='undirected', lap_type='normalized', coords=R)
-    G.compute_laplacian()  # Stored in G.L, sparse matrix, csc ordering
+    G.compute_laplacian(lap_type='normalized')  # Stored in G.L, sparse matrix, csc ordering
     if compute_differential_operator is True:
         G.compute_differential_operator()  # stored in G.D, also accessible via G.grad() or G.div() (for the adjoint).
     else:
