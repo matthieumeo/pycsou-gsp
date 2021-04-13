@@ -21,7 +21,7 @@ The package, named `pycgsp <https://pypi.org/project/pycgsp>`_, is organised as 
    * Graph convolution operators: ``GraphConvolution``
    * Graph differential operators: ``GraphLaplacian``, ``GraphGradient``, ``GeneralisedGraphLaplacian``.
 
-2. The subpackage ``pycgsp.tesselation`` provides routines for generating graphs from discrete tessellations of continuous manifolds such as the sphere. 
+2. The subpackage ``pycgsp.graph`` provides routines for generating graphs from discrete tessellations of continuous manifolds such as the sphere. 
    
 Installation
 ============
