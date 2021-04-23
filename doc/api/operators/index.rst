@@ -3,6 +3,8 @@
 Linear Operators
 ================
 
+Module: ``pycgsp.linop``
+
 .. autosummary::
    :toctree:
 

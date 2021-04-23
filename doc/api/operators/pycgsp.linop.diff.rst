@@ -1,6 +1,8 @@
 Differential Operators
 ======================
 
+Module: ``pycgsp.linop.diff``
+
 Base class for graph convolution operators. 
 
 .. automodule:: pycgsp.linop.diff

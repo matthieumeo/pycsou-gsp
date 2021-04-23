@@ -1,6 +1,8 @@
 Tessellation Graphs
 ===================
 
+Module: ``pycgsp.graph``
+
 .. automodule:: pycgsp.graph
    :special-members: __init__
 
